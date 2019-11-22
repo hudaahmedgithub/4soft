@@ -1,0 +1,141 @@
+.row{
+    margin: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+.same-form{
+    margin-top: 50px;
+}
+.same-form h4{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.same-form form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 30px 10px 10px;
+}
+.same-form form input::placeholder{
+    text-transform: capitalize;
+}
+.same-form form input:focus{
+    outline: none;
+}
+.same-form .login-form label{
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+.same-form button{
+    padding: 10px 0;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.same-form .face{
+    margin-top: 25px;
+}
+.same-form button .fa{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.login .login-form{
+    padding: 0 50px;
+    border-right: 1px solid #00bcd4;
+}
+.login-form span{
+    float: right;
+    text-transform: capitalize;
+}
+.register .register-form{
+    width: 70%;
+    margin: 0 auto;
+}
+.register form input{
+    display: inline-block;
+    width: 48%;
+    padding: 30px 0 10px;
+}
+.register form input[id='first'],
+.register form input[id='email']{
+    margin-right: 2%;
+}
+.register .register-form{
+    width: 70%;
+    margin: 0 auto;
+}
+.register .go-login{
+    text-align: center;
+    margin-top: 20px;
+}
+.register .go-login p{
+    margin-bottom: 10px;
+}
+/************************************/
+.create-account{
+    padding: 0 50px;
+}
+.create-account p{
+    margin-bottom: 150px;
+}
+.same-form h4,
+.login-form span,
+.colo {
+    color: #00bcd4;
+}
+.account-btn:hover {
+    background-color: #00bcd4;
+}
+.same-form button.account-btn{
+    border: 1px solid #00bcd4;
+    color: #00bcd4;
+}
+.same-form .face{
+    background-color: #4267B2;
+    color: white;
+}
+.same-form button:hover{
+    color: white;
+}
+.same-form form input{
+    border-bottom: 1px solid #ccc;
+}
+.same-form form input:focus{
+    border-bottom: 2px solid #00bcd4;
+}
+
+@media (max-width: 768px){
+    /*********Start of login.html**************/
+    .login .login-form{
+        border-right: none;
+        box-shadow: 0 0 5px #777;
+        padding: 15px;
+    }
+    .create-account{
+        margin-top: 100px;
+        box-shadow: 0 0 5px #777;
+        padding: 15px;
+    }
+    .create-account p{
+        margin-bottom: 50px;
+    }
+    /*********End of login.html**************/
+
+    /*********Start of register.html**************/
+    .register .register-form{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .register form input{
+        display: block;
+        width: 100%;
+    }
+    /*********End of register.html**************/
+}

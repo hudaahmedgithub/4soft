@@ -1,0 +1,16 @@
+.hero-wrap .overlay:not(.app-home){
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(43, 43, 43)) ;
+    opacity: 1;
+    z-index: 1;
+    width: 100%;
+    height: 600px!important;
+}
+
+
+.hero-wrap .slider-text h1, .hero-wrap .slider-text spanText ~="Newsfeed"{
+    color: #fff!important;
+}
+
+.ftco-section .nav-pills .nav-link.active, .ftco-section .nav-pills .nav-link:hover{
+    background: #7f47ff;
+}

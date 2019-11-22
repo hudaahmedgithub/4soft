@@ -1,0 +1,428 @@
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(main-bg.jpg);
+    background-size: cover;
+    opacity: .1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+/******************start of blog page****************/
+.blog{
+    margin: 25px auto;
+}
+.blog nav{
+    margin-top: 20px;
+}
+.blog .page-item .page-link{
+    color: #353c3f;
+}
+.blog .page-item.active .page-link{
+    background-color: #00BCD4;
+    border-color: #00BCD4;
+    color: #fff;
+}
+.blog .article{
+    box-shadow: 0 0 2px 0 #999;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.blog .article img{
+    width: 100%;
+    height: 200px;
+}
+.blog .article .details{
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.blog .article h5{
+    padding: 10px;
+    font-size: 18px;
+}
+.blog .article h5 span{
+    font-size: 12px;
+    float: right;
+    color: #777;
+}
+.blog .article h5::first-letter{
+    text-transform: uppercase;
+}
+.blog .article p{
+    color: #777;
+    padding: 0 10px;
+}
+.blog .article button,
+.courses-section .description button{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: right;
+    background-color: #00BCD4;
+    border-radius: 15px;
+}
+/***************************end of blog page***********************/
+/*************************start of (article page)******************/
+.article-content{
+    box-shadow: 0 0 2px 0 #999;
+    background-color: rgba(256, 256, 256, .6);
+    padding: 50px;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+.article-content h4{
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+.article-content img{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+.article-content .date{
+    color: #777;
+}
+.article-content .article-text{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 0 #999;
+}
+.article-content .article-text h6{
+    text-transform: capitalize;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+.article-content .article-text p{
+    color: #999;
+}
+.article-content .form-group{
+    margin: 30px auto;
+}
+.article-content .form-group .form-control{
+    border-radius: 15px;
+}
+.article-content .form-group .form-control:focus{
+    outline: none;
+}
+.article-content .form-group label{
+    color: #111;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.article-content button{
+    color: white;
+    font-weight: 500;
+    width: 35%;
+    background-color: #00BCD4;
+    border-radius: 15px;
+}
+/*************************end of (article page)*********************/
+.courses aside{
+    border: 1px solid #eee;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #bbb;
+    background-color: #fff;
+}
+.courses aside ul{
+    margin-bottom: 0;
+}
+.courses aside ul li a{
+    display: block;
+    padding: 10px 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+.courses aside ul li a.active{
+    background-color: #00BCD4;
+    color: #fff;
+}
+.courses aside ul li a.active:hover{
+    text-decoration: none;
+}
+.courses aside ul li a:not(.active):hover{
+    text-decoration: none;
+    background-color: #eee;
+}
+/**********************start of courses page ***********************/
+.courses{
+    margin: 25px auto;
+}
+.courses-section .course-card{
+    width: 100%;
+    margin: 30px 0;
+    box-shadow: 0 0 2px #999;
+}
+.courses-section .course-card img{
+    width: 100%;
+    height: 250px;
+}
+.courses-section .description{
+    padding: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.courses-section .description h4{
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.courses-section .description p{
+    color: #999;
+}
+/**********************start of courses page ***********************/
+/****************start of course details page******************/
+.course-header{
+    padding: 25px 0;
+    box-shadow: 0 1px 10px #ccc;
+    background-color: #fff;
+}
+.course-header .main-details h3{
+    text-transform: capitalize
+}
+.course-header .main-details button{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 50px;
+    background-color: #00bcd4 !important;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+.course-details{
+    padding: 25px 0;
+}
+.course-details .about-course{
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px #ddd;
+    border-radius: 3px;
+}
+.course-content h3{
+    padding: 20px 0 10px;
+    font-size: 26px
+}
+.course-content h3 .fa{
+    color: #00bcd4;
+    font-size: 36px;
+    margin-left: 16px;
+    position: relative;
+}
+/*.course-content h3 .fa::after{
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: #17285d;
+    opacity: .3;
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    z-index: -1;
+}*/
+
+.course-content .content-bar{
+    width: 65%;
+    background-color: #fff;
+    box-shadow: 0 0 2px #bbb;
+    margin-bottom: 10px;
+}
+.course-content .content-bar .head-bar{
+    padding: 15px;
+    box-shadow: 0 0 2px #ddd;
+    border-radius: 3px;
+    color: #444;
+    cursor: pointer
+}
+.course-content .content-bar .head-bar h4{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.course-content .content-bar .head-bar h4 .fa{
+    margin-right: 15px;
+    color: #00BCD4;
+    position: relative;
+}
+/*.course-content .content-bar .head-bar h4 .fa::after{
+    content: "";
+    width: 2px;
+    background: #17285d;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}*/
+.course-content .content-bar .head-bar span{
+    float: right;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.course-content .content-bar .head-bar h4 .fa-angle-down{
+    margin-right: 0;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.course-content .content-bar .bar-content{ 
+    display: none;
+    padding: 5px 15px;
+}
+.course-content .content-bar .bar-content *{
+    color: #444;
+    font-weight: 400
+}
+.course-content .content-bar .bar-content h6{
+    padding: 5px 0;
+    font-size: 13px
+}
+.course-content .content-bar .bar-content h6 .fa{
+    margin-right: 15px;
+    color: #00BCD4;
+}
+.course-content .content-bar .bar-content span{
+    float: right;
+    font-size: 12px;
+    margin-right: 7px
+}
+.course-details .instructor{
+    margin-top: 50px
+}
+.course-details .instructor img{
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px
+}
+.course-details .left-content{
+    margin-top: 50px
+}
+.course-details .left-content p .fa{
+    margin-right: 5px;
+    color: #00BCD4;
+}
+.course-details .left-content p span{
+    display: inline-block;
+    width: 100px
+}
+/****************end of course details page******************/
+
+/****************start of objectives page *******************/
+.courses .main-img{
+    width: 100%;
+    height: 300px;
+}
+.objective-section{
+    margin: 20px auto;
+}
+.objective-section .objective-card{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #bbb;
+    overflow: hidden;
+}
+.objective-section .objective-card .obj-img{
+    float: right;
+}
+.objective-section .objective-card .description h4{
+    text-transform: capitalize;
+}
+.objective-section .objective-card .description h4 span{
+    color: white;
+    display: inline-block;
+    background-color: #00BCD4;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    border-radius: 50%;
+}
+.objective-section .objective-card .description p{
+    color: #888;
+    margin-left: 55px;
+    margin-bottom: 0;
+}
+/****************end of objectives page *******************/
+
+/*************start of after-learning page ***************/
+.after-learning img{
+    width: 100%;
+    height: 300px;
+}
+.after-learning h3{
+    text-transform: uppercase;
+    margin: 10px;
+}
+.after-learning p{
+    color: #444;
+}
+.after-learning .main-desc{
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px auto;
+    box-shadow: 0 0 2px #ddd;
+}
+.after-learning .content-bar{
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 2px #bbb;
+}
+.after-learning .content-bar .head-bar{
+    padding: 10px;
+    box-shadow: 0 0 2px #bbb;
+    border-radius: 3px;
+    color: #444;
+    cursor: pointer
+}
+.after-learning .content-bar .head-bar h4{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.after-learning .content-bar .fa{
+    margin-right: 15px;
+    color: #00BCD4;
+}
+.after-learning .content-bar .head-bar span{
+    float: right;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.after-learning .content-bar .head-bar h4 .fa-angle-down{
+    margin-right: 0;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.after-learning .content-bar .bar-content{ 
+    display: none;
+    padding: 5px 15px;
+}
+.after-learning .content-bar .bar-content *{
+    color: #444;
+    font-weight: 400
+}
+.after-learning .content-bar .bar-content h6{
+    padding: 5px 0;
+    font-size: 13px
+}
+.after-learning .content-bar .bar-content span{
+    float: right;
+    font-size: 12px;
+    margin-right: 7px
+}
+/*************end of after-learning page *****************/
